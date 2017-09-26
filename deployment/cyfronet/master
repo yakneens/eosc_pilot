@@ -11,7 +11,7 @@ fileserver_backend:
 gitfs_provider: gitpython
 
 gitfs_remotes:
-  - git://github.com/llevar/pan-prostate.git:
+  - git://github.com/llevar/eosc_pilot.git:
     - root: configuration/salt/state
     - base: master
   - git://github.com/llevar/butler.git:
@@ -30,9 +30,10 @@ ext_pillar:
 #  - hiera: /etc/hiera.yaml
 #  - cmd_yaml: cat /etc/salt/yaml
   - git:
+    - master git://github.com/llevar/eosc_pilot.git:
+      - root: configuration/salt/pillar
+      - env: base
     - master git://github.com/llevar/butler.git:
       - root: configuration/salt/pillar
       - env: base
-    - master git://github.com/llevar/pan-prostate.git:
-      - root: configuration/salt/pillar
-      - env: base
+    

@@ -6,7 +6,7 @@ variable "password" {
 	default="CHANGE_ME"
 }
 variable "tenant_name" {
-	default="Pan-Prostate"
+	default="eoscpilot-pancancer"
 }
 variable "auth_url" {
 	
@@ -26,11 +26,11 @@ variable "bastion_host" {
 }
 
 variable "bastion_user" {
-	default = "iakhnin"
+	default = "centos"
 }
 
 variable "image_id" {
-	default = "a8198fc8-309c-43b0-99eb-e691dbdc760e"
+	default = "2b66b62d-b9f3-436c-977a-d58d8f6ca285"
 }
 
 variable "user" {
@@ -42,20 +42,45 @@ variable "key_file" {
 }
 
 variable "network_name" {
-	default = "Pan-Prostate_private"
+	default = "flat-801-ceph"
 }
 
 variable "main_network_id" {
-	default="d506eaf8-88b5-43c3-a751-a198672017e6"
-}
-
-variable "pan_prostate_network_id" {
-	default="eb60b9be-0d31-41f0-b5d3-f6546cb13a67"
-}
-variable "gnos_network_id" {
-	default="ee244fc2-9540-4523-a642-53d1fad0fb53"
+	default="cc8320b9-7811-4385-b806-b51698f214d7"
 }
 
 variable "floatingip_pool" {
-	default = "ext-net"
+	default = "external-10-192"
+}
+
+variable "worker_count" {
+	default="1"
+}
+
+variable "salt-master-flavor" {
+	default="h1.large"
+}
+
+variable "worker-flavor" {
+	default="h1.large"
+}
+
+variable "db-server-flavor" {
+	default="h1.large"
+}
+
+variable "job-queue-flavor" {
+	default="h1.large"
+}
+
+variable "tracker-flavor" {
+	default="h1.large"
+}
+
+variable "main-security-group-id" {
+	default="default"
+}
+
+variable "domain_name" {
+	default="Default"
 }

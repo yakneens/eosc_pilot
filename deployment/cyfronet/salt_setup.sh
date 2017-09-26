@@ -5,8 +5,9 @@ echo "got $1 as master ip, $2 as id and $3 as roles"
 sudo yum install epel-release -y
 #sudo yum -y update
 sudo yum install wget yum-plugin-priorities -y
-sudo yum install -y https://repo.saltstack.com/yum/redhat/salt-repo-latest-1.el7.noarch.rpm
+sudo yum install -y https://repo.saltstack.com/yum/redhat/salt-repo-latest-2.el7.noarch.rpm
 sudo yum clean expire-cache
+sudo pip install tornado -U
 sudo yum install salt-minion -y
 sudo service salt-minion stop
 echo "master: $1" | sudo tee  -a /etc/salt/minion

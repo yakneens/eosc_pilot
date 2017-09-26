@@ -6,7 +6,7 @@ variable "password" {
 	default="CHANGE_ME"
 }
 variable "tenant_name" {
-	default="ukw-780"
+	default="Germline"
 }
 variable "auth_url" {
 	
@@ -42,10 +42,19 @@ variable "key_file" {
 }
 
 variable "network_name" {
-	default = "ukw-780_network"
+	default = "Germline_private"
 }
 
 variable "main_network_id" {
+	default="741b1f92-6687-4d1d-b533-42e7f3dac9a8"
+}
+variable "gnos_network_id" {
+	default="741b1f92-6687-4d1d-b533-42e7f3dac9a8"
+}
+variable "1kgp_network_id" {
+	default="741b1f92-6687-4d1d-b533-42e7f3dac9a8"
+}
+variable "panp_network_id" {
 	default="741b1f92-6687-4d1d-b533-42e7f3dac9a8"
 }
 
@@ -78,5 +87,5 @@ variable "tracker-flavor" {
 }
 
 variable "main-security-group-id" {
-	default="default"
+	default="internal"
 }

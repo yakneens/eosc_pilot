@@ -9,6 +9,15 @@ resource "openstack_compute_instance_v2" "tracker" {
 	network = {
 		uuid = "${var.main_network_id}"
 	}
+	network = {
+		uuid = "${var.gnos_network_id}"
+	}
+	network = {
+		uuid = "${var.1kgp_network_id}"
+	}
+	network = {
+		uuid = "${var.panp_network_id}"
+	}
 	connection {
 		user = "${var.user}"
 	 	private_key = "${file(var.key_file)}"
