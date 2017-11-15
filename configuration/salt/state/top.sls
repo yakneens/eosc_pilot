@@ -26,7 +26,8 @@ base:
     - dnsmasq.1kgp-share
     - dnsmasq.ebi-proxy
     - dnsmasq.gnos-share
-    - dnsmasq.pan-prostate-share    
+    - dnsmasq.pan-prostate-share
+    - nfs-shares    
   'G@roles:tracker':
     - git
     - run-tracking-db.set_db_url
@@ -42,7 +43,8 @@ base:
     - dnsmasq.1kgp-share
     - dnsmasq.ebi-proxy
     - dnsmasq.gnos-share
-    - dnsmasq.pan-prostate-share 
+    - dnsmasq.pan-prostate-share
+    - nfs-shares 
   'G@roles:db-server':
     - postgres
     - run-tracking-db
