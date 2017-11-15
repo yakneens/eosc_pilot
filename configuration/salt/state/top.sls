@@ -2,6 +2,7 @@ base:
   '*':
     - selinux
     - dnsmasq
+    - dnsmasq.resolv
     - elastic.filebeat
     - elastic.packetbeat
     - ntp
@@ -22,7 +23,11 @@ base:
     - butler.tracker
     - butler.deploy.example-workflows
     - cwltool
-    - docker    
+    - docker
+    - dnsmasq.1kgp-share
+    - dnsmasq.ebi-proxy
+    - dnsmasq.gnos-share
+    - dnsmasq.pan-prostate-share    
   'G@roles:tracker':
     - git
     - run-tracking-db.set_db_url
@@ -35,6 +40,10 @@ base:
     - butler.tracker
     - butler.deploy.example-workflows
     - hostfile
+    - dnsmasq.1kgp-share
+    - dnsmasq.ebi-proxy
+    - dnsmasq.gnos-share
+    - dnsmasq.pan-prostate-share 
   'G@roles:db-server':
     - postgres
     - run-tracking-db
