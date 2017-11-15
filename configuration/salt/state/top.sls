@@ -2,7 +2,6 @@ base:
   '*':
     - selinux
     - dnsmasq
-    - dnsmasq.resolv
     - elastic.filebeat
     - elastic.packetbeat
     - ntp
