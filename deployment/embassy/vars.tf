@@ -30,8 +30,7 @@ variable "bastion_user" {
 }
 
 variable "image_id" {
-#	default = "48635cc8-5f8c-4476-8731-2d8eb1d3595d"
-	default = "14218f6c-3589-43a8-8f35-0f5550af1399"
+	default = "38618faa-3e30-454d-8166-7cfb2316548c"
 }
 
 variable "user" {
@@ -57,10 +56,6 @@ variable "1kgp_network_id" {
 }
 variable "panp_network_id" {
 	default="6058aeb3-633f-4b2d-8726-b8e5514ccbb6"
-}
-
-variable "floatingip_pool" {
-	default = "VLAN3337"
 }
 
 variable "worker_count" {
