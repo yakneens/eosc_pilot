@@ -26,11 +26,12 @@ variable "bastion_host" {
 }
 
 variable "bastion_user" {
-	default = "centos"
+	default = "ubuntu"
 }
 
 variable "image_id" {
-	default = "5550b32e-f335-468a-9d21-751822294afb"
+#	default = "48635cc8-5f8c-4476-8731-2d8eb1d3595d"
+	default = "14218f6c-3589-43a8-8f35-0f5550af1399"
 }
 
 variable "user" {
@@ -46,16 +47,16 @@ variable "network_name" {
 }
 
 variable "main_network_id" {
-	default="741b1f92-6687-4d1d-b533-42e7f3dac9a8"
+	default="3a8dbb6c-f1fb-48e7-9baa-82a2ab74e4e8"
 }
 variable "gnos_network_id" {
-	default="741b1f92-6687-4d1d-b533-42e7f3dac9a8"
+	default="57e634e1-b42e-4d2c-ac4d-d8236b872a5c"
 }
 variable "1kgp_network_id" {
-	default="741b1f92-6687-4d1d-b533-42e7f3dac9a8"
+	default="b200d942-b472-4409-885f-6b6f7bcf5691"
 }
 variable "panp_network_id" {
-	default="741b1f92-6687-4d1d-b533-42e7f3dac9a8"
+	default="6058aeb3-633f-4b2d-8726-b8e5514ccbb6"
 }
 
 variable "floatingip_pool" {
@@ -67,23 +68,23 @@ variable "worker_count" {
 }
 
 variable "salt-master-flavor" {
-	default="c4-15gb-83"
+	default="s1.large"
 }
 
 variable "worker-flavor" {
-	default="c8-30gb-186"
+	default="s1.massive"
 }
 
 variable "db-server-flavor" {
-	default="c8-60gb-186"
+	default="s1.massive"
 }
 
 variable "job-queue-flavor" {
-	default="c8-30gb-186"
+	default="s1.massive"
 }
 
 variable "tracker-flavor" {
-	default="c8-30gb-186"
+	default="s1.massive"
 }
 
 variable "main-security-group-id" {
