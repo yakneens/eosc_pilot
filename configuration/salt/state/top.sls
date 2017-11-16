@@ -18,6 +18,7 @@ base:
     - git
     - celery
     - airflow
+    - airflow.load-workflows
     - airflow.worker
     - butler.tracker
     - cwltool
@@ -34,6 +35,7 @@ base:
     - airflow
     - airflow.init-db
     - airflow.patch-airflow-url-prefix
+    - airflow.load-workflows
     - airflow.server
     - jsonmerge
     - butler.tracker
