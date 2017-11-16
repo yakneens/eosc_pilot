@@ -23,12 +23,8 @@ base:
     - butler.tracker
     - cwltool
     - docker
-  'G@roles:worker and G@roles:ebi':
-    - dnsmasq.1kgp-share
-    - dnsmasq.ebi-proxy
-    - dnsmasq.gnos-share
-    - dnsmasq.pan-prostate-share
-    - nfs-shares    
+  'G@roles:worker and G@roles:comp-can':  
+    - nfs-shares.comp_can   
   'G@roles:tracker':
     - git
     - run-tracking-db.set_db_url
@@ -47,7 +43,9 @@ base:
     - dnsmasq.ebi-proxy
     - dnsmasq.gnos-share
     - dnsmasq.pan-prostate-share
-    - nfs-shares 
+    - nfs-shares
+  'G@roles:tracker and G@roles:comp-can':  
+    - nfs-shares.comp_can  
   'G@roles:db-server':
     - postgres
     - run-tracking-db
