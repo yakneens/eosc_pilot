@@ -20,7 +20,6 @@ base:
     - airflow
     - airflow.worker
     - butler.tracker
-    - butler.deploy.example-workflows
     - cwltool
     - docker
     - dnsmasq.1kgp-share
