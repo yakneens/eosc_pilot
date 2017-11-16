@@ -42,11 +42,11 @@ variable "key_file" {
 }
 
 variable "network_name" {
-	default = "ukw-780_network"
+	default = "VLAN3331_network"
 }
 
 variable "main_network_id" {
-	default="741b1f92-6687-4d1d-b533-42e7f3dac9a8"
+	default="dedbfee7-55a0-4201-8b19-a50b673f822d"
 }
 
 variable "floatingip_pool" {

@@ -45,8 +45,7 @@ resource "openstack_compute_instance_v2" "salt-master" {
 		     "sudo service salt-master stop",
 		     "sudo mv /home/centos/master /etc/salt/master",       
 		     "sudo service salt-master start",
-		     "sudo hostname salt-master",
-		     "sudo semodule -i collectdlocal.pp",
+		     "sudo hostname salt-master"
 	  ]
         }
 }
