@@ -42,7 +42,7 @@ base:
     - butler.tracker
     - butler.deploy.example-workflows
     - hostfile    
-  'G@roles:tracker and G@roles:ebi'  
+  'G@roles:tracker and G@roles:ebi':  
     - dnsmasq.1kgp-share
     - dnsmasq.ebi-proxy
     - dnsmasq.gnos-share
