@@ -59,7 +59,7 @@ variable "panp_network_id" {
 }
 
 variable "worker_count" {
-	default="1"
+	default="60"
 }
 
 variable "salt-master-flavor" {
@@ -67,7 +67,7 @@ variable "salt-master-flavor" {
 }
 
 variable "worker-flavor" {
-	default="s1.massive"
+	default="s1.gargantuan"
 }
 
 variable "db-server-flavor" {
