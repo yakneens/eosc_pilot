@@ -23,7 +23,7 @@ requirements:
 
 hints:
   - class: ResourceRequirement
-    coresMin: 1 # works but long, 8 recommended
+    coresMin: 8 # works but long, 8 recommended
     ramMin: 15000 # good for WGS human ~30-60x
     outdirMin: 5000000 # unlikely any BAM processing would be possible in less
 

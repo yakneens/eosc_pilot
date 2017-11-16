@@ -23,6 +23,7 @@ base:
     - butler.tracker
     - cwltool
     - docker
+  'G@roles:worker and G@roles:ebi':
     - dnsmasq.1kgp-share
     - dnsmasq.ebi-proxy
     - dnsmasq.gnos-share
@@ -40,7 +41,8 @@ base:
     - jsonmerge
     - butler.tracker
     - butler.deploy.example-workflows
-    - hostfile
+    - hostfile    
+  'G@roles:tracker and G@roles:ebi'  
     - dnsmasq.1kgp-share
     - dnsmasq.ebi-proxy
     - dnsmasq.gnos-share

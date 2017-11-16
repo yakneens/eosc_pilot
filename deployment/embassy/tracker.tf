@@ -36,7 +36,7 @@ resource "openstack_compute_instance_v2" "tracker" {
 	provisioner "remote-exec" {
 	  inline = [
 	    "chmod +x /tmp/salt_setup.sh",
-	    "/tmp/salt_setup.sh ${null_resource.masterip.triggers.address} tracker \"tracker, consul-server\""
+	    "/tmp/salt_setup.sh ${null_resource.masterip.triggers.address} tracker \"tracker, consul-server, ebi\""
 	  ]
 	}
 }
