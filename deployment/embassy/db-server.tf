@@ -27,7 +27,7 @@ resource "openstack_compute_instance_v2" "db-server" {
 	provisioner "remote-exec" {
 	  inline = [
 	    "chmod +x /tmp/salt_setup.sh",
-	    "/tmp/salt_setup.sh ${null_resource.masterip.triggers.address} db-server \"db-server, consul-client\""
+	    "/tmp/salt_setup.sh ${null_resource.masterip.triggers.address} db-server \"db-server, consul-client, ebi\""
 	  ]
 	}
 }
