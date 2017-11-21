@@ -12,4 +12,4 @@ install_oneclient:
     
 run_oneclient:
   cmd.run:
-    - name: oneclient -i -H pancancer-eosc-cyf.tk -t {{ pillar['oneclient_access_token'] }}: /oneclient 
+    - name: oneclient -i -H pancancer-eosc-cyf.tk -t {{ pillar['cyfronet_secrets:oneclient_access_token'] }}: /oneclient 

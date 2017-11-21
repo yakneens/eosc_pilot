@@ -1,6 +1,6 @@
 /etc/ceph/ceph.conf:
   file.managed:
-    - contents_pillar: ceph_conf
+    - contents_pillar: cyfronet_secrets:ceph_conf
     - user: root
     - group: root
     - mode: 644
@@ -8,7 +8,7 @@
     
 /etc/ceph/ceph.client.eoscpilot.fs.keyring:
   file.managed:
-    - contents_pillar: ceph_keyring
+    - contents_pillar: cyfronet_secrets:ceph_keyring
     - user: root
     - group: root
     - mode: 600
@@ -16,7 +16,7 @@
     
 /etc/ceph/eoscpilot.fs.key:
   file.managed:
-    - contents_pillar: ceph_key
+    - contents_pillar: cyfronet_secrets:ceph_key
     - user: root
     - group: root
     - mode: 600
