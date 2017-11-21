@@ -1,13 +1,7 @@
-/tmp/oneclient.sh:
-  file.managed:
-    - source: salt://oneprovider/config/oneclient.sh
-    - user: root
-    - group: root
-    - mode: 700
-    
 install_oneclient:
-  cmd.run:
-    - name: /tmp/oneclient.sh
+  cmd.script:
+    - source: salt://oneprovider/config/oneclient.sh
+    - shell: /bin/sh
     
 /oneclient:
   file.directory:    
