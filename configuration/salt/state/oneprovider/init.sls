@@ -1,6 +1,6 @@
 install_oneclient:
   cmd.script:
-    - source: salt://onedata/config/oneclient.sh
+    - source: salt://oneprovider/config/oneclient.sh
     
 /oneclient:
   file.directory:    
