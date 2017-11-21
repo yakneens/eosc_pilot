@@ -24,4 +24,9 @@ base:
       - consul.server   
   'G@roles:single-node':
     - consul.single_node
+  'G@roles:tracker and G@roles:cyfronet':  
+    - cyfronet
+  'G@roles:worker and G@roles:cyfronet':  
+    - cyfronet
+
 
