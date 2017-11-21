@@ -9,7 +9,7 @@ ceph_repo2:
     - name: rpm -Uvh http://download.ceph.com/rpm-luminous/el7/noarch/ceph-release-1-1.el7.noarch.rpm
     
 ceph_pkgs:
-  pkg.installed:
+  pkg.latest:
     - pkgs:
       - ceph-common
       
