@@ -1,0 +1,8 @@
+{
+	"results_base_path": "/ceph/eoscpilot/1kgp-results",
+	"results_local_path": "/tmp/1kgp-discovery/",
+	"freebayes": {
+		"mode": "discovery",
+		"flags": "--min-repeat-entropy 1 --report-genotype-likelihood-max"
+	}
+}
