@@ -21,6 +21,7 @@ base:
     - airflow.load-workflows
     - airflow.worker
     - butler.tracker
+    - butler.deploy.example-workflows
     - cwltool
     - docker
   'G@roles:worker and G@roles:comp-can':  

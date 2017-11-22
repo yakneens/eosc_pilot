@@ -54,7 +54,7 @@ variable "floatingip_pool" {
 }
 
 variable "worker_count" {
-	default="29"
+	default="34"
 }
 
 variable "salt-master-flavor" {

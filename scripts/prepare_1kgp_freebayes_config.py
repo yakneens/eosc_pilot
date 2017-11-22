@@ -28,7 +28,9 @@ def parse_args():
 def generate_config_objects(samples_path, config_location):
     for root, dirs, files in os.walk(samples_path):
         for my_file in files:
+            print os.path.join(root, my_file)
             if re.match(filename_re.format(release_1_date), my_file) or re.match(filename_re.format(release_2_date), my_file):
+                print "Match"
                 this_config_data = {"sample": {
                                     "sample_id": os.path.basename(os.path.dirname(root)),
                                     "sample_location": os.path.join(root, my_file)
