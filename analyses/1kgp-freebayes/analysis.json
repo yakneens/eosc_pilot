@@ -4,5 +4,6 @@
 	"freebayes": {
 		"mode": "discovery",
 		"flags": "--min-repeat-entropy 1 --report-genotype-likelihood-max"
-	}
+	},
+	"reference_location": "/ceph/eoscpilot/reference/reference_grch37d5/genome.fa"
 }
