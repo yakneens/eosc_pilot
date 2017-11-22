@@ -1,7 +1,13 @@
+onedata_repo:
+  pkgrepo.managed:
+    - humanname: Onedata YUM Repo
+    - baseurl: http://packages.onedata.org/yum/centos/7x
+    - gpgkey: http://packages.onedata.org/onedata.gpg.key
+    
 install_oneclient:
-  cmd.script:
-    - source: salt://oneprovider/config/oneclient.sh
-    - shell: /bin/sh
+  pkg.latest:
+    - pkgs:
+      - oneclient
     
 /oneclient:
   file.directory:    
