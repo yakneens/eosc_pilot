@@ -24,7 +24,11 @@ base:
     - cwltool
     - docker
   'G@roles:worker and G@roles:comp-can':  
-    - nfs-shares.comp_can   
+    - nfs-shares.comp_can
+  'G@roles:worker and G@roles:cyfronet':  
+    - ceph
+    - ceph.mount-cyfronet
+    - onedata   
   'G@roles:tracker':
     - git
     - run-tracking-db.set_db_url
@@ -45,7 +49,11 @@ base:
     - dnsmasq.pan-prostate-share
     - nfs-shares
   'G@roles:tracker and G@roles:comp-can':  
-    - nfs-shares.comp_can  
+    - nfs-shares.comp_can
+  'G@roles:tracker and G@roles:cyfronet':  
+    - ceph
+    - ceph.mount-cyfronet
+    - onedata   
   'G@roles:db-server':
     - postgres
     - run-tracking-db
