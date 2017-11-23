@@ -9,7 +9,9 @@
 	},
 	"generate_cram": false,
 	"cwl_file_location": "/opt/eosc_pilot/workflows/sanger-bwa-workflow/sanger-bwa-workflow.cwl",
+	"cwl_config_template_location": "/opt/airflow/dags/eosc_pilot/sanger-bwa-workflow/config-template.json",
 	"cwl_config_location": "/tmp/sanger-bwa-cwl-config.json",
-	"cwl_flags": " --debug --non-strict --enable-dev "
+	"cwl_flags": " --debug --non-strict --enable-dev ",
+	"tmp_outdir": "/pan-prostate/docker_temp/"
 }
 
