@@ -10,7 +10,12 @@ base:
   'G@roles:worker':
     - test-data
     - run-tracking-db
-    - airflow
+  'G@roles:worker and G@roles:comp-can':
+    - airflow.compcan
+  'G@roles:worker and G@roles:cyfronet':
+    - airflow.cyfronet
+  'G@roles:worker and G@roles:embassy':
+    - airflow.embassy
   'G@roles:tracker':
     - run-tracking-db
     - airflow
