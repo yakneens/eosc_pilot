@@ -90,9 +90,9 @@ def generate_config_objects(available_samples, num_runs, config_location):
         this_config_data = {"sample": {
                                 "donor_index": available_samples[this_run].index,
                                 "normal_sample_id": normal_sample_id,
-                                "normal_sample_location": "/pan-prostate/results/sanger_pcawg_alignments_normal/" + normal_sample_id + "/" + normal_sample_id + ".bam",
+                                "normal_sample_location": "/pan-prostate/results/sanger_pcawg_alignments_normal2/" + normal_sample_id + "/" + normal_sample_id + ".bam",
                                 "tumour_sample_id": tumour_sample_id,
-                                "tumour_sample_location": "/pan-prostate/results/sanger_pcawg_alignments/" + tumour_sample_id + "/" + tumour_sample_id + ".bam"
+                                "tumour_sample_location": "/pan-prostate/results/sanger_pcawg_alignments2/" + tumour_sample_id + "/" + tumour_sample_id + ".bam"
                                 }
                             }
         
