@@ -21,8 +21,8 @@ import distutils.util
 
 from subprocess import check_output
 
-def get_cwl_config_template():
-    fp = open("/opt/airflow/dags/eosc_pilot/sanger-variant-calling-workflow/config-template.json")
+def get_cwl_config_template(cwl_config_template_location):
+    fp = open(cwl_config_template_location)
     cwl_config = json.load(fp)
     fp.close()
     return cwl_config
@@ -88,14 +88,15 @@ def run_sanger_callers(**kwargs):
     
     result_path_prefix = config["results_base_path"] + "/" + new_sample_id
     
-    cwl_config_location = prepare_cwl_config(get_cwl_config_template(), config, sample)
+    cwl_config_location = prepare_cwl_config(get_cwl_config_template(config["cwl_config_template_location"]), config, sample)
     
     cwl_file_location = config["cwl_file_location"]
     
-    cwl_command = "{} {} --outdir {} --tmp-outdir-prefix /pan-prostate/docker_temp/ {} {}".\
+    cwl_command = "{} {} --outdir {} --tmp-outdir-prefix {} {} {}".\
         format("cwl-runner",
                cwl_flags,
                result_path_prefix,
+               config["tmp_outdir"],
                cwl_file_location,
                cwl_config_location)
     call_command("id", "id")

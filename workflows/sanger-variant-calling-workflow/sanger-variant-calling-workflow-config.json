@@ -1,6 +1,9 @@
 {
 	"cwl_file_location": "/opt/eosc_pilot/workflows/sanger-variant-calling-workflow/sanger-variant-calling-workflow.cwl",
 	"cwl_config_location": "/tmp/sanger-variant-calling-cwl-config.json",
-	"cwl_flags": " --debug --non-strict --enable-dev "
+	"cwl_flags": " --debug --non-strict --enable-dev ",
+	"cwl_config_template_location": "/opt/airflow/dags/eosc_pilot/sanger-variant-calling-workflow/config-template.json",
+	"tmp_outdir": "/pan-prostate/docker_temp/"
+	
 }
 
