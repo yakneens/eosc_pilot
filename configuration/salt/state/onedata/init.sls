@@ -9,7 +9,7 @@ install_oneclient:
     - pkgs:
       - oneclient
     
-/oneclient:
+{{ pillar['oneclient_mountpoint'] }}:
   file.directory:    
     - user: root
     - group: root
@@ -17,6 +17,14 @@ install_oneclient:
     - file_mode: 644
     - makedirs: True 
     
-run_oneclient:
-  cmd.run:
-    - name: oneclient -i  -o allow_other -H pancancer-eosc-cyf.tk -t {{ pillar['cyfronet_secrets']['oneclient_access_token'] }} /oneclient
+/usr/lib/systemd/system/oneclient.service:
+  file.managed:
+    - source: salt://onedata/config/oneclient.service
+    - user: root
+    - group: root
+    - mode: 644
+    - template: jinja
+
+oneclient:
+  service.running:
+    - enable: True

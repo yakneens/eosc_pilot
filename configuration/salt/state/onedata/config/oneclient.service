@@ -1,0 +1,20 @@
+[Unit]
+Description = Oneclient PanCancer service
+After       = network.target
+
+[Service]
+EnvironmentFile=/etc/oneclient.env
+# Create Oneclient mountpoint if necessary
+ExecStartPre=/usr/bin/mkdir -p {{ pillar['oneclient_mountpoint'] }}
+# Start Oneclient in Direct IO mode
+ExecStart=/opt/oneclient/bin/oneclient -i -o allow_other  -H {{ pillar['oneclient_provider_host'] }} --force-direct-io -t {{ pillar['cyfronet_secrets']['oneclient_access_token'] }} {{ pillar['oneclient_mountpoint'] }}
+# Test the DirectIO connection to EOSCpilot-PanCancer data space - let it fail for the first time
+ExecStartPost=-/bin/bash -c "echo TEST > {{ pillar['oneclient_mountpoint'] }}/EOSCpilot-PanCancer/.directio-detection"
+ExecStartPost=/bin/bash -c "echo TEST > {{ pillar['oneclient_mountpoint'] }}/EOSCpilot-PanCancer/.directio-detection"
+# Unmount oneclient when stopping the service
+ExecStop      = /bin/fusermount -uz {{ pillar['oneclient_mountpoint'] }}
+Restart       = no
+Type          = forking
+
+[Install]
+WantedBy    = multi-user.target

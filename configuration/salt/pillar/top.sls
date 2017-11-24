@@ -12,9 +12,10 @@ base:
     - run-tracking-db
   'G@roles:worker and G@roles:comp-can':
     - airflow.compcan
-    - cyfronet
   'G@roles:worker and G@roles:cyfronet':
     - airflow.cyfronet
+    - cyfronet
+    - onedata
   'G@roles:worker and G@roles:embassy':
     - airflow.embassy
   'G@roles:tracker':
@@ -34,6 +35,7 @@ base:
     - consul.single_node
   'G@roles:tracker and G@roles:cyfronet':  
     - cyfronet
+    - onedata
 
     
 
