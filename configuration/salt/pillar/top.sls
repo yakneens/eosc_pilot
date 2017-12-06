@@ -36,7 +36,8 @@ base:
   'G@roles:tracker and G@roles:cyfronet':  
     - cyfronet
     - onedata
-
+  'G@roles:monitoring-server and G@roles:embassy':
+    - embassy
     
 
 
