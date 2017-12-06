@@ -16,7 +16,7 @@ base:
     - airflow.cyfronet
     - cyfronet
     - onedata
-  'G@roles:worker and G@roles:embassy':
+  'G@roles:worker and G@roles:ebi':
     - airflow.embassy
   'G@roles:tracker':
     - run-tracking-db
@@ -36,7 +36,7 @@ base:
   'G@roles:tracker and G@roles:cyfronet':  
     - cyfronet
     - onedata
-  'G@roles:monitoring-server and G@roles:embassy':
+  'G@roles:monitoring-server and G@roles:ebi':
     - embassy
     
 
