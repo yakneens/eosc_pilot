@@ -54,7 +54,7 @@ variable "floatingip_pool" {
 }
 
 variable "worker_count" {
-	default="121"
+	default="10"
 }
 
 variable "salt-master-flavor" {
@@ -62,7 +62,7 @@ variable "salt-master-flavor" {
 }
 
 variable "worker-flavor" {
-	default="c8-30gb-186"
+	default="c16-60gb-392"
 }
 
 variable "db-server-flavor" {

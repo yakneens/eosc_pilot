@@ -1,2 +1,2 @@
 oneclient_mountpoint: /oneclient
-oneclient_provider_host: pancancer-eosc-cyf.tk
+oneclient_provider_host: pancancer2-eosc-cyf.tk

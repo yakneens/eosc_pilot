@@ -18,9 +18,9 @@ tf_vars: |
   =B+ao
   -----END PGP MESSAGE-----
     
-terraform_files: /opt/eosc_pilot/deployment/embassy/
-terraform_state: /opt/eosc_pilot/deployment/embassy/terraform.tfstate
-terraform_vars: /opt/eosc_pilot/deployment/embassy/ebi_credentials.tfvars
+terraform_files: /opt/eosc_pilot/deployment/compute_canada/
+terraform_state: /opt/eosc_pilot/deployment/compute_canada/terraform.tfstate
+terraform_vars: /opt/eosc_pilot/deployment/compute_canada/cc_credentials.tfvars
 terraform_provider: openstack
     
-kapacitor.slack_channel: embassyalerts
+kapacitor.slack_channel: compcanalerts

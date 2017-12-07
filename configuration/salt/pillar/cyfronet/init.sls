@@ -63,3 +63,10 @@ cyfronet_secrets:
     pQNc5brVNSYBVtFfvA/rj46xE/fVl/HkE21YITD1puALPmNcALguGFnrgQY=
     =SzQB
     -----END PGP MESSAGE-----
+    
+kapacitor.slack_channel: cyfronetalerts
+
+terraform_files: /opt/eosc_pilot/deployment/cyfronet/
+terraform_state: /opt/eosc_pilot/deployment/cyfronet/terraform.tfstate
+terraform_vars: /opt/eosc_pilot/deployment/cyfronet/cyfronet_credentials.tfvars
+terraform_provider: openstack
