@@ -38,6 +38,9 @@ base:
     - onedata
   'G@roles:monitoring-server and G@roles:ebi':
     - embassy
-    
+  'G@roles:monitoring-server and G@roles:cyfronet':
+    - cyfronet
+  'G@roles:monitoring-server and G@roles:compcan':
+    - compcan  
 
 
