@@ -64,6 +64,24 @@ cyfronet_secrets:
     =SzQB
     -----END PGP MESSAGE-----
     
+tf_vars:
+  -----BEGIN PGP MESSAGE-----
+  
+  hQEMA9+4K+JlOZ7+AQgAiGMkhSSJc2ht3vHv0vsTyHOAaOTfM236XYJsms0EmVOP
+  9JbhMlRUFWrJADdsbAOaWOMHTwY07Uu/QTp1H5jz8y+856wfRmLAuW9XKR5e/kEj
+  AWX77ldGgiR63nFdP634GAENeXm/Q7EbmwvYlad+vtqMQ0WTrnn8CJm49y357aHK
+  fXol4tlPWqNsHWA/F0KRMDhaETp/lf+cthYN416ClJkRjQ2TYN4ZK65IJswCCvo9
+  PAl6eqLLvA4qaI5oUajxczov0a2CcRBOHXj6u+WTtWkMKpwLWELrRLAWPDMCiKt9
+  sbe5hJeXfhAgSdI39DZg73CpWBSM9QOgbC0Qbat2a9LALwFxL13/LZ+12zmp6cun
+  4IyZ5GtTwKaqFLpu86nWRTcqAFrr2OBQyLyG2sNwySkmi3qZrFvUH/DZhfbp6kh8
+  MlvCsVfVQs6901uY7A0I7UOKuG0CIt3VeLaoLYkokYeLY6lK71gMBdTwHdzf8Flb
+  EcHMrXZ0Fp4Id2jX+F6SCDUXxhmGTfBKjVQLs2zGiPjRv7w2db4cVVMxddGhO+WS
+  mJyisXQDVeOSgmUNd0z2JyyPuTZWP2DHn9OSL7OvCxFVe3bVQo1aJA+t8x+cdLcR
+  FkzmgjgH7+ABteuLJ2gF2PECnjGNv6uhyThgq1JZoO5v
+  =oWnI
+  -----END PGP MESSAGE-----    
+    
+   
 kapacitor.slack_channel: cyfronetalerts
 
 terraform_files: /opt/eosc_pilot/deployment/cyfronet/
