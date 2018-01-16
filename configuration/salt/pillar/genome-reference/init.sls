@@ -1,4 +1,4 @@
-ref_base_url: http://s3.amazonaws.com/pan-cancer-data/pan-cancer-reference
+ref_base_url: https://dcc.icgc.org/api/v1/download?fn=/PCAWG/reference_data/pcawg-bwa-mem/
 
 reference_files:
   genome.fa.gz: a07c7647c4f2e78977068e9a4a31af15
