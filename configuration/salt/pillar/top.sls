@@ -18,6 +18,7 @@ base:
     - onedata
   'G@roles:worker and G@roles:ebi':
     - airflow.embassy
+    - embassy
   'G@roles:tracker':
     - run-tracking-db
     - airflow
