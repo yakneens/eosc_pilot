@@ -1,4 +1,3 @@
-ref_path: /ceph/eoscpilot/reference/
 ref_base_url: http://s3.amazonaws.com/pan-cancer-data/pan-cancer-reference
 
 reference_files:

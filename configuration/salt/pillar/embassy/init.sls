@@ -24,3 +24,5 @@ terraform_vars: /opt/eosc_pilot/deployment/embassy/ebi_credentials.tfvars
 terraform_provider: openstack
     
 kapacitor.slack_channel: embassyalerts
+
+ref_path: /germline/data/reference/
