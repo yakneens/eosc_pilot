@@ -36,7 +36,7 @@ base:
     - ceph
     - ceph.mount-cyfronet
     - onedata
-  'G@roles:worker and G@roles:cyfronet':  
+  'G@roles:worker and G@roles:ebi':  
     - dnsmasq.1kgp-share
     - dnsmasq.ebi-proxy
     - dnsmasq.gnos-share
