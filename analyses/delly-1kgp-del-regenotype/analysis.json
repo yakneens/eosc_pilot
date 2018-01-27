@@ -1,6 +1,6 @@
 {
-	"variants_location": "/pan-prostate/delly_sites/hgsv.DEL.bcf",
-	"results_base_path": "/shared/data/results/delly_germline_deletions_14_07_2016/",
+	"variants_location": "/pan-prostate/delly_sites/hgsvc.hg19.bcf",
+	"results_base_path": "/pan-prostate/results/delly_1kgp_deletions_16_1_2018/",
 	"results_local_path": "/tmp/delly_germline_deletions/",
 	"variants_type": "DEL"
 	
